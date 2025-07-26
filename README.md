@@ -10,3 +10,63 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+<!-- 
+import React, { useState } from 'react';
+
+const App = () => {
+  const [todos, settodos] = useState([
+    { id: 1, text: 'Todo 1', isCompleted: true },
+  ])
+  const [title, settitle] = useState("")
+  const [completed, setcompleted] = useState(true)
+  const [gender, setgender] = useState("Male")
+  const [city, setcity] = useState("Mumbai")
+  return (
+    <div><h1>Create Todos</h1>
+      <form action="">
+
+        <input
+          onChange={(e) => settitle(e.target.value)}
+          value={title}
+          type="text" placeholder='title' /><br />
+
+        <input type="checkbox"
+          checked={completed}
+          onChange={(e) => setcompleted(e.target.checked)} />Completed <br />
+
+        <input type="radio"
+          value="Male"
+          onChange={(e) => setgender(e.target.value)}
+          checked={gender == "Male" && true}
+        />Male
+
+        <input type="radio"
+          value="Female"
+          onChange={(e) => setgender(e.target.value)}
+          checked={gender == "Female" && true}
+        />Female <br />
+
+        <select onChange={(e) => setcity(e.target.value)}
+          value={city}>
+          <option value="Delhi">Delhi</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Kolkata">Kolkata</option>
+        </select>
+
+        <button>Create Todo</button>
+      </form>
+    </div>
+  )
+}
+
+export default App -->
+
+1. To append a new data to useState we need to 
+a. Copy the original data
+b. pushing the data in the copied data
+c. And setting the data
+<!-- 
+let copytodos=[...todos] ->copy
+     copytodos.push(newtodo) ->push
+     settodos(copytodos) -> set new data-->
