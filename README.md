@@ -70,3 +70,14 @@ c. And setting the data
 let copytodos=[...todos] ->copy
      copytodos.push(newtodo) ->push
      settodos(copytodos) -> set new data-->
+
+# filter
+filter is used to filter the data from the array-implicit return
+
+# Types Of css
+1. Inline CSS
+2. Internal CSS
+3. External CSS
+4. Module css-do not use tag selector here. use class selector or id selector
+
+5.class is a reserved keyword in react thus className is used
